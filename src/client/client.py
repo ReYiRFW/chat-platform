@@ -53,7 +53,7 @@ class ChatClient:
         print("Disconnected from the chat server.")
 
 if __name__ == "__main__":
-    client = ChatClient(host='10.250.233.0', port=12345)
+    client = ChatClient(host='127.0.0.1', port=12345)
     client.connect()
     
     while True:

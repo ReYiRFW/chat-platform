@@ -53,7 +53,7 @@ class ChatServer:
             thread = threading.Thread(target=self.handle_client, args=(client,))
             thread.start()
 
-if __name__ == "__main__":
+def start_server():
     print("聊天服务器正在运行...")
     chat_server = ChatServer()
     chat_server.receive()
